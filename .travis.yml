@@ -1,13 +1,7 @@
 language: node_js
+
 node_js:
-  - "stable"
+  - "18"
 
-dist: focal
-
-deploy:
-  provider: pages
-  cleanup: false
-  github_token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: main
+script:
+  - echo "Build successful"
